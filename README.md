@@ -8,4 +8,3 @@ Our official Telegram channel for system operation updates and changes related t
 
 https://t.me/alliance\_ecommerce\
 \
-\
