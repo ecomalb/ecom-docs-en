@@ -27,7 +27,7 @@ description: Integrating Google Pay™ on a Web Page
       const tokenizationSpecification = {
         type: "PAYMENT_GATEWAY",
         parameters: {
-          gateway: "alliance_bank", // Specify the required gateway
+          gateway: "timeproject", // Specify the required gateway
           gatewayMerchantId: "123123123123324", // Specify the required merchantId
         },
       };
@@ -154,7 +154,7 @@ description: Integrating Google Pay™ on a Web Page
               ...paymentData,
               merchantInfo: {
                 merchantId: '123123123123324', // Specify the required gatewayMerchantId
-                gateway: 'alliance_bank' // Specify the required gateway
+                gateway: 'timeproject' // Specify the required gateway
               },
             },
             environment: 'TEST', // or PRODUCTION
