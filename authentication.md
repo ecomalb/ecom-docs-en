@@ -23,17 +23,22 @@ description: Getting Started
 
 Clarification: Encryption and decryption URL
 
-\{{url\}}cipher/decrypt\_by\_jwk?message=
+<kbd>\{{url\}}cipher/decrypt\_by\_jwk?message=</kbd>
 
-\{{url\}}cipher/encrypt\_by\_jwk?message=
+<kbd>\{{url\}}cipher/encrypt\_by\_jwk?message=</kbd>
+
+! only for help during tests! They are forbidden to refuse with product keys.
 
 
 
-### Only for assistance during testing! They are prohibited from being executed with production keys.
+#### For encryption and decryption, the following is used:
+
+* Key encryption algorithm (alg) - `ECDH-ES+A256KW`
+* Request body encryption algorithm (enc) - `A256GCM`
 
 #### **Example of encrypt/decrypt**&#x20;
 
-```
+```python
 def encrypt_data(self, msg: str, use_server_public_key: bool = False) -> str:
         """Get compact JWE token with encrypted data"""
 

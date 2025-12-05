@@ -6,6 +6,9 @@ description: >-
 
 # Test cases
 
+In test operations, RRN will be equal to the value "-1".\
+ApprovalCode will not be received.
+
 | Operation    | The number of cents | Response |
 | ------------ | ------------------- | -------- |
 | SALES step 2 | 4 cents             | SUCCESS  |
