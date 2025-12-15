@@ -1,5 +1,5 @@
 ---
-description: '{{url}}/ecom/execute_request/payments/v1/apple_pay_3ds/card_to_account'
+description: '{{url}}/ecom/jws/payments/apple_pay_3ds/card_to_account_v1'
 ---
 
 # C2A request Step 2 (3DS)

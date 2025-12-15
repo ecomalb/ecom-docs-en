@@ -1,5 +1,5 @@
 ---
-description: '{{url}}/ecom/execute_request/payments/v4/account_to_card'
+description: '{{url}}/ecom/jws/payments/account_to_card_v3'
 ---
 
 # A2C

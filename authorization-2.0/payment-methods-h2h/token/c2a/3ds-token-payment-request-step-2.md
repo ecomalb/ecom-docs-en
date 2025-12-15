@@ -1,14 +1,14 @@
 ---
-description: '{{url}}/ecom/execute_request/payments/v1/card_2_terminal/token_3ds'
+description: '{{url}}/ecom/jws/payments/card_2_terminal/token_3ds_v1'
 ---
 
 # 3DS token payment request Step 2
 
-## **Input Parameters:**
+#### Input parameters of the JWS payload part:
 
 <table data-header-hidden><thead><tr><th width="151"></th><th width="144"></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>Parameter</td><td>Description</td><td>Data Format</td><td>Required</td><td>Example</td></tr><tr><td>operationId</td><td>Operation ID received in Step 1</td><td>string</td><td>Yes</td><td>137d9304-0368-11ed-b939-0242ac120002</td></tr><tr><td>date</td><td>Payment date and time</td><td>string</td><td>Yes</td><td>{{currentdateT}}.00+00:00</td></tr><tr><td>browserInfo</td><td>Browser-related data object</td><td>object</td><td>Yes, if 3DS required</td><td></td></tr><tr><td>browserAcceptHeader</td><td>HTTP request header</td><td>string</td><td>Yes, if 3DS required</td><td>text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,...</td></tr><tr><td>browserUserAgent</td><td>User agent string</td><td>string</td><td>Yes, if 3DS required</td><td>Mozilla/5.0 (Windows NT 10.0; Win64; x64)...</td></tr><tr><td>browserLanguage</td><td>Browser language</td><td>string</td><td>Yes, if 3DS required</td><td>en-US,en</td></tr><tr><td>browserColorDepth</td><td>Screen color depth</td><td>string</td><td>Yes, if 3DS required</td><td>24</td></tr><tr><td>browserScreenHeight</td><td>Browser window height</td><td>string</td><td>Yes, if 3DS required</td><td>800</td></tr><tr><td>browserScreenWidth</td><td>Browser window width</td><td>string</td><td>Yes, if 3DS required</td><td>1280</td></tr><tr><td>browserTZ</td><td>Browser timezone</td><td>string</td><td>Yes, if 3DS required</td><td>-180</td></tr></tbody></table>
 
-## **Output Parameters:**
+#### Output parameters of the JWS payload part:
 
 | Parameter                  | Description                                                           | Data Format               | Example                                                                      |
 | -------------------------- | --------------------------------------------------------------------- | ------------------------- | ---------------------------------------------------------------------------- |
@@ -85,11 +85,11 @@ description: '{{url}}/ecom/execute_request/payments/v1/card_2_terminal/token_3ds
 | recipientCardNumberMask    | Recipient's masked card number                                        | string                    | 5573\*\*\*\*\*\*\*\*0304                                                     |
 | externalCardToken          | token id                                                              | string                    | tmkEYenZSa8FV03aawVXxbep                                                     |
 
-#### **Приклади :**
+#### Examples
 
 <details>
 
-<summary>JWS Payload — тіло запиту перед підписанням ​</summary>
+<summary>JWS Payload - the request body before signing up</summary>
 
 ```
 {
@@ -112,7 +112,7 @@ description: '{{url}}/ecom/execute_request/payments/v1/card_2_terminal/token_3ds
 
 <details>
 
-<summary>JWS Payload — тіло відповіді перед підписанням</summary>
+<summary>JWS Payload - the response body before signing up</summary>
 
 ```
 {

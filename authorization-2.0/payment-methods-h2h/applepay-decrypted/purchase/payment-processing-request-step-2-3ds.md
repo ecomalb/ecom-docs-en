@@ -1,5 +1,5 @@
 ---
-description: '{{url}}/ecom/execute_request/payments/v1/apple_pay_3ds/purchase'
+description: '{{url}}/ecom/jws/payments/apple_pay_3ds/purchase_v1'
 ---
 
 # Payment Processing Request - Step 2 (3DS)

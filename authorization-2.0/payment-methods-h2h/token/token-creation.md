@@ -1,10 +1,10 @@
 ---
-description: '{{url}}/ecom/execute_request/token/v1/create'
+description: '{{url}}/ecom/jws/token/create_v1'
 ---
 
 # Token Creation
 
-### Request Parameters
+#### Input parameters of the JWS payload part:
 
 | Parameter           | Description                                               | Data Format | Required | Example                              |
 | ------------------- | --------------------------------------------------------- | ----------- | -------- | ------------------------------------ |
@@ -15,7 +15,7 @@ description: '{{url}}/ecom/execute_request/token/v1/create'
 | encryptedExpDate    | Card expiration date encrypted in JWE                     | string      | Yes      | `2503` (decrypted example)           |
 | date                | Date and time of the transaction                          | string      | Yes      | \{{currentdateT\}}.00+00:00          |
 
-### Response Parameters
+#### Output parameters of the JWS payload part:
 
 | Parameter  | Description                   | Data Format | Example                              |
 | ---------- | ----------------------------- | ----------- | ------------------------------------ |
@@ -25,11 +25,11 @@ description: '{{url}}/ecom/execute_request/token/v1/create'
 | merchantId | Merchant ID generated in Ecom | string(36)  | 137d9304-0368-11ed-b939-0242ac168002 |
 | status     | Token status                  | string      | ACTIVE                               |
 
-#### Приклади :
+#### Examples
 
 <details>
 
-<summary>JWS Payload — тіло запиту перед підписанням</summary>
+<summary>JWS Payload - the request body before signing up</summary>
 
 ```
 {
@@ -46,7 +46,7 @@ description: '{{url}}/ecom/execute_request/token/v1/create'
 
 <details>
 
-<summary>JWS Payload — тіло відповіді перед підписанням</summary>
+<summary>JWS Payload - the response body before signing up</summary>
 
 ```
 {

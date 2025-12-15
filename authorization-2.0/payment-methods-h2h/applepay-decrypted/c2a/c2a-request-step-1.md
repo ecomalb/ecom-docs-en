@@ -1,5 +1,5 @@
 ---
-description: '{{url}}/ecom/execute_request/payments/v3/apple_pay/card_to_account'
+description: '{{url}}/ecom/jws/payments/apple_pay/card_to_account_v3'
 ---
 
 # C2A request Step 1

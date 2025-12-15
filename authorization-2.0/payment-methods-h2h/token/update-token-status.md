@@ -1,5 +1,5 @@
 ---
-description: '{{url}}/ecom/execute_request/token/v1/state/update'
+description: '{{url}}/ecom/jws/token/state/update_v1'
 ---
 
 # Update Token Status
@@ -12,14 +12,14 @@ description: '{{url}}/ecom/execute_request/token/v1/state/update'
 * **SUSPENDED → DELETED** – A suspended token can be deleted if the user does not restore activity.
 * **DELETED → any other status** – Not possible.
 
-## Request Parameters
+#### Input parameters of the JWS payload part:
 
 | Parameter | Description      | Data Format | Required | Example                   |
 | --------- | ---------------- | ----------- | -------- | ------------------------- |
 | token     | Token ID         | string      | Yes      | SRrSBe5DOb7lrZ\_FS46fihty |
 | state     | New token status | string      | Yes      | SUSPENDED                 |
 
-## Response Parameters
+#### Output parameters of the JWS payload part:
 
 | Parameter    | Description                                    | Data Format | Example                   |
 | ------------ | ---------------------------------------------- | ----------- | ------------------------- |
@@ -27,11 +27,11 @@ description: '{{url}}/ecom/execute_request/token/v1/state/update'
 | customerId   | Customer ID                                    | string(255) | 12345                     |
 | token        | Token ID                                       | string      | SRrSBe5DOb7lrZ\_FS46fihty |
 
-#### Приклади :
+#### Examples
 
 <details>
 
-<summary>JWS Payload — тіло запиту перед підписанням</summary>
+<summary>JWS Payload - the request body before signing up</summary>
 
 ```
 {
@@ -44,7 +44,7 @@ description: '{{url}}/ecom/execute_request/token/v1/state/update'
 
 <details>
 
-<summary>JWS Payload — тіло відповіді перед підписанням</summary>
+<summary>JWS Payload - the response body before signing up</summary>
 
 ```
 {

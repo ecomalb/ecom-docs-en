@@ -1,5 +1,5 @@
 ---
-description: '{{url}}/ecom/execute_request/payments/v1/execute/card_to_account'
+description: '{{url}}/ecom/jws/payments/execute/card_to_account_v1'
 ---
 
 # C2A Transaction Request - Step 2

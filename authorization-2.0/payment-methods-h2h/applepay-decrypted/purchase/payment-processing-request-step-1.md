@@ -1,5 +1,5 @@
 ---
-description: '{{url}}/ecom/execute_request/payments/v3/apple_pay/purchase'
+description: '{{url}}/ecom/jws/payments/apple_pay/purchase_v3'
 ---
 
 # Payment Processing Request - Step 1

@@ -1,5 +1,5 @@
 ---
-description: '{{url}}/ecom/execute_request/payments/v1/applepay/merchant/get'
+description: '{{url}}/ecom/jws/payments/merchant/get_v1'
 ---
 
 # Request to receive aPay merchant data
@@ -7,7 +7,7 @@ description: '{{url}}/ecom/execute_request/payments/v1/applepay/merchant/get'
 Request for the merchant to receive data and settings of aPay merchant \
 Optional request. Hard-coded aPay data on the merchant side is possible<br>
 
-## Output parameters
+#### Output parameters of the JWS payload part:
 
 | Parameter            | Description                                                                                                                          | Data Format | Example                                    |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ----------- | ------------------------------------------ |
@@ -16,11 +16,11 @@ Optional request. Hard-coded aPay data on the merchant side is possible<br>
 | countryCode          | the two-letter country code (according to the ISO 3166-1 alpha-2 standard) where the Apple Pay transaction will be made.             | string      | UA                                         |
 | currencyCode         | defines the currency in which the payment will be made via Apple Pay. Three-letter currency code according to the ISO 4217 standard. | string      | UAH                                        |
 
-#### Приклади :
+#### Examples
 
 <details>
 
-<summary>JWS Payload — тіло запиту перед підписанням</summary>
+<summary>JWS Payload - the request body before signing up</summary>
 
 ```json
 {  }
@@ -30,7 +30,7 @@ Optional request. Hard-coded aPay data on the merchant side is possible<br>
 
 <details>
 
-<summary>JWS Payload — тіло відповіді перед підписанням</summary>
+<summary>JWS Payload - the response body before signing up</summary>
 
 ```json
 {

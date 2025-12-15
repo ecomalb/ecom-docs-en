@@ -1,10 +1,10 @@
 ---
-description: '{{url}}/ecom/execute_request/payments/v1/purchase/token_3ds'
+description: '{{url}}/ecom/jws/payments/purchase/token_3ds_v1'
 ---
 
 # 3DS token payment request Step 2
 
-## Input Parameters:
+#### Input parameters of the JWS payload part:
 
 | Parameter           | Description                     | Data Format | Required                | Example                                      |
 | ------------------- | ------------------------------- | ----------- | ----------------------- | -------------------------------------------- |
@@ -19,7 +19,7 @@ description: '{{url}}/ecom/execute_request/payments/v1/purchase/token_3ds'
 | browserScreenWidth  | Browser viewport width          | string      | Yes, if 3DS is required | 1280                                         |
 | browserTZ           | Browser timezone                | string      | Yes, if 3DS is required | -180                                         |
 
-## Output Parameters:
+#### Output parameters of the JWS payload part:
 
 | Parameter               | Description                        | Data Format | Example                                                                      |
 | ----------------------- | ---------------------------------- | ----------- | ---------------------------------------------------------------------------- |
@@ -83,11 +83,11 @@ description: '{{url}}/ecom/execute_request/payments/v1/purchase/token_3ds'
 | senderCardNumberMask    | Sender's masked card number        | string      | 5573\*\*\*\*\*\*\*\*0304                                                     |
 | externalCardToken       | token id                           | string      | tmkEYenZSa8FV03aawVXxbep                                                     |
 
-#### Приклади :
+#### Examples
 
 <details>
 
-<summary>JWS Payload — тіло запиту перед підписанням</summary>
+<summary>JWS Payload - the request body before signing up</summary>
 
 ```
 {
@@ -110,7 +110,7 @@ description: '{{url}}/ecom/execute_request/payments/v1/purchase/token_3ds'
 
 <details>
 
-<summary>JWS Payload — тіло відповіді перед підписанням</summary>
+<summary>JWS Payload - the response body before signing up</summary>
 
 ```
 {

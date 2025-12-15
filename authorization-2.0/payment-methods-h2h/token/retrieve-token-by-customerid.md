@@ -1,16 +1,16 @@
 ---
-description: '{{url}}/ecom/execute_request/token/v1/list/by-customer-id'
+description: '{{url}}/ecom/jws/token/list/by-customer-id_v1'
 ---
 
 # Retrieve Token by CustomerId
 
-#### Request Parameters
+#### Input parameters of the JWS payload part:
 
 | Parameter  | Description | Data Format | Required | Example |
 | ---------- | ----------- | ----------- | -------- | ------- |
 | customerId | Customer ID | string(255) | Yes      | 12345   |
 
-#### Response Parameters
+#### Output parameters of the JWS payload part:
 
 | Parameter  | Description        | Data Format | Example                              |
 | ---------- | ------------------ | ----------- | ------------------------------------ |
@@ -20,11 +20,11 @@ description: '{{url}}/ecom/execute_request/token/v1/list/by-customer-id'
 | merchantId | Merchant ID        | string      | 137d9304-0368-11ed-b939-0242ac120002 |
 | status     | Token status       | string      | ACTIVE                               |
 
-#### Приклади :
+#### Examples
 
 <details>
 
-<summary>JWS Payload — тіло запиту перед підписанням</summary>
+<summary>JWS Payload - the request body before signing up</summary>
 
 ```
 {
@@ -36,7 +36,7 @@ description: '{{url}}/ecom/execute_request/token/v1/list/by-customer-id'
 
 <details>
 
-<summary>JWS Payload — тіло відповіді перед підписанням</summary>
+<summary>JWS Payload - the response body before signing up</summary>
 
 ```
 {
