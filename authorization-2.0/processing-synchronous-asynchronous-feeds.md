@@ -132,4 +132,6 @@ The client must:
 
 To verify the signature, you need to decode the header part where the kid parameter will be located.
 
-### Obtain the public key by kid.
+{% openapi-operation spec="ENGetPublicKey" path="/ecom/keys/public_key/get_v1" method="post" %}
+[OpenAPI ENGetPublicKey](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/ebadd8d3ab52cc8fd94ed4cee3654745b5619e2c45a58d2be73d3882eb05eb90.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20251215%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251215T133948Z&X-Amz-Expires=172800&X-Amz-Signature=48ad4dcef82119403fc5f3a8118f44286230cbfdf9194021ef13aeb818077d8f&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% endopenapi-operation %}
