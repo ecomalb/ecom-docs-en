@@ -1,14 +1,14 @@
 ---
-description: '{{url}}/ecom/execute_request/payments/v1/execute/purchase'
+description: '{{url}}/ecom/jws/payments/execute/purchase_v1'
 ---
 
 # PURCHASE Request - Step 2
 
-## Input Parameters:
+#### Input parameters of the JWS payload part:
 
 <table data-header-hidden><thead><tr><th>Parameter</th><th width="221.800048828125">Description</th><th>Data Format</th><th width="73.4000244140625">Required</th><th>Example</th></tr></thead><tbody><tr><td>operationId</td><td>Operation ID obtained in Step 1</td><td>string</td><td>Yes</td><td>1697008393082nW0c1jr6KVv</td></tr><tr><td>encryptedCardData</td><td><p>card expiration date and cvv2 are encrypted in JWE. First 4 characters ExpDate, next 3 characters cvv</p><p></p><ul><li>If <code>"NONCVV\noncvv"</code> is passed in <code>TxnType</code> parameter then in <code>ecnryptedCardData</code> parameter only <strong>YYMM</strong> without <strong>CVV</strong> should be passed</li><li>Otherwise if nothing is passed in <code>TxnType</code> then in <strong>encryptedCardData</strong> parameter it is mandatory to pass in YYMMCVV format</li></ul></td><td>string</td><td>Yes</td><td>2503111 (decrypted format)</td></tr><tr><td>date</td><td>Payment date and time</td><td>string</td><td>Yes</td><td>{{currentdateT}}.00+00:00</td></tr><tr><td>browserInfo</td><td>Object containing browser data</td><td>object</td><td>Yes, if 3DS is required</td><td>-</td></tr><tr><td>browserAcceptHeader</td><td>HTTP request header</td><td>string</td><td>Yes, if 3DS is required</td><td>text/html,application/xhtml+xml,...</td></tr><tr><td>browserUserAgent</td><td>Browser user-agent string</td><td>string</td><td>Yes, if 3DS is required</td><td>Mozilla/5.0 (Windows NT 10.0; Win64; x64)...</td></tr><tr><td>browserLanguage</td><td>Browser language</td><td>string</td><td>Yes, if 3DS is required</td><td>en-US,en</td></tr><tr><td>browserColorDepth</td><td>Screen color depth value</td><td>string</td><td>Yes, if 3DS is required</td><td>24</td></tr><tr><td>browserScreenHeight</td><td>Browser viewport height</td><td>string</td><td>Yes, if 3DS is required</td><td>800</td></tr><tr><td>browserScreenWidth</td><td>Browser viewport width</td><td>string</td><td>Yes, if 3DS is required</td><td>1280</td></tr><tr><td>browserTZ</td><td>Browser timezone</td><td>string</td><td>Yes, if 3DS is required</td><td>-180</td></tr></tbody></table>
 
-## Output Parameters:
+#### Output parameters of the JWS payload part:
 
 | Parameter               | Description                        | Data Format | Example                                                                      |
 | ----------------------- | ---------------------------------- | ----------- | ---------------------------------------------------------------------------- |
@@ -72,11 +72,11 @@ description: '{{url}}/ecom/execute_request/payments/v1/execute/purchase'
 | senderCardNumberMask    | Sender's masked card number        | string      | 5573\*\*\*\*\*\*\*\*0304                                                     |
 | externalCardToken       | Token id                           | string      | tmkEYenZSa8FV03aawVXxbep                                                     |
 
-#### Приклади :
+#### Examples :
 
 <details>
 
-<summary>JWS Payload — тіло запиту перед підписанням</summary>
+<summary>JWS Payload - the request body before signing up</summary>
 
 ```json
 
@@ -100,7 +100,7 @@ description: '{{url}}/ecom/execute_request/payments/v1/execute/purchase'
 
 <details>
 
-<summary>JWS Payload — тіло відповіді перед підписанням без 3дс</summary>
+<summary>JWS Payload - the response body before subscriptions without 3ds</summary>
 
 ```json
 {
@@ -166,7 +166,7 @@ description: '{{url}}/ecom/execute_request/payments/v1/execute/purchase'
 
 <details>
 
-<summary>JWS Payload — тіло відповіді перед підписанням з 3дс</summary>
+<summary>JWS Payload - the response body before subscriptions with 3ds</summary>
 
 ```json
 {
