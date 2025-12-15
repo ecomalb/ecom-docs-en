@@ -27,21 +27,31 @@ description: '{{url}}/ecom/execute_request/token/v1/state/update'
 | customerId   | Customer ID                                    | string(255) | 12345                     |
 | token        | Token ID                                       | string      | SRrSBe5DOb7lrZ\_FS46fihty |
 
-## Example Request Body
+#### Приклади :
 
-```json
-jsonКопіюватиРедагувати{
+<details>
+
+<summary>JWS Payload — тіло запиту перед підписанням</summary>
+
+```
+{
     "token": "-s9UCfCNN0YMk4ZOyZX8pWAt",
     "state": "SUSPENDED"
 }
 ```
 
-## Example Response Body
+</details>
 
-```json
-jsonКопіюватиРедагувати{
+<details>
+
+<summary>JWS Payload — тіло відповіді перед підписанням</summary>
+
+```
+{
     "tokenUpdated": true,
     "customerId": "senderCustomerId",
     "token": "-s9UCfCNN0YMk4ZOyZX8pWAt"
 }
 ```
+
+</details>

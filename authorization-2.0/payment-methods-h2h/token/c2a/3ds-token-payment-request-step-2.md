@@ -85,9 +85,13 @@ description: '{{url}}/ecom/execute_request/payments/v1/card_2_terminal/token_3ds
 | recipientCardNumberMask    | Recipient's masked card number                                        | string                    | 5573\*\*\*\*\*\*\*\*0304                                                     |
 | externalCardToken          | token id                                                              | string                    | tmkEYenZSa8FV03aawVXxbep                                                     |
 
-## **Example Request Body**&#x20;
+#### **Приклади :**
 
-```json
+<details>
+
+<summary>JWS Payload — тіло запиту перед підписанням ​</summary>
+
+```
 {
     "operationId": "{{operationIdT}}",
     "browserInfo": {
@@ -100,13 +104,17 @@ description: '{{url}}/ecom/execute_request/payments/v1/card_2_terminal/token_3ds
         "browserTZ": "-180"
     },
     "date": "{{currentdateT}}.00+00:00"
-}
+       }
 
 ```
 
-## Example response body&#x20;
+</details>
 
-```json
+<details>
+
+<summary>JWS Payload — тіло відповіді перед підписанням</summary>
+
+```
 {
     "type": "CARD_2_ACCOUNT",
     "rrn": null,
@@ -181,3 +189,5 @@ description: '{{url}}/ecom/execute_request/payments/v1/card_2_terminal/token_3ds
     "externalCardToken": "tmkEYenZSa8FV03aawVXxbep"
 }
 ```
+
+</details>

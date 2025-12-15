@@ -20,21 +20,29 @@ description: '{{url}}/ecom/execute_request/token/v1/get'
 | merchantId | Merchant ID        | string      | 137d9304-0368-11ed-b939-0242ac120002 |
 | status     | Token status       | string      | ACTIVE                               |
 
-#### Example Request Body
+#### Приклади :
 
-```json
-jsonКопіюватиРедагувати{
+<details>
+
+<summary>JWS Payload — тіло запиту перед підписанням</summary>
+
+```
+{
     "token": "SRrSBe5DOb7lrZ_FS46fihty"
 }
 ```
 
-#### Example Response Body
+</details>
 
-```json
-jsonКопіюватиРедагувати{
+<details>
+
+<summary>JWS Payload — тіло відповіді перед підписанням</summary>
+
+```
+{
     "result": [
         {
-            "token": "-SRrSBe5DOb7lrZ_FS46fihty",
+            "token": "-s9UCfCNN0YMk4ZOyZX8pWAt",
             "status": "ACTIVE",
             "maskedPan": "523244••••••0177",
             "customerId": "senderCustomerId",
@@ -43,3 +51,5 @@ jsonКопіюватиРедагувати{
     ]
 }
 ```
+
+</details>

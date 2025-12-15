@@ -20,17 +20,25 @@ description: '{{url}}/ecom/execute_request/token/v1/list/by-customer-id'
 | merchantId | Merchant ID        | string      | 137d9304-0368-11ed-b939-0242ac120002 |
 | status     | Token status       | string      | ACTIVE                               |
 
-#### Example Request Body
+#### Приклади :
 
-```json
+<details>
+
+<summary>JWS Payload — тіло запиту перед підписанням</summary>
+
+```
 {
     "customerId": "senderCustomerId"
 }
 ```
 
-#### Example Response Body
+</details>
 
-```json
+<details>
+
+<summary>JWS Payload — тіло відповіді перед підписанням</summary>
+
+```
 {
     "result": [
         {
@@ -43,3 +51,5 @@ description: '{{url}}/ecom/execute_request/token/v1/list/by-customer-id'
     ]
 }
 ```
+
+</details>

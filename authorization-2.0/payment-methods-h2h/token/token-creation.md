@@ -25,7 +25,11 @@ description: '{{url}}/ecom/execute_request/token/v1/create'
 | merchantId | Merchant ID generated in Ecom | string(36)  | 137d9304-0368-11ed-b939-0242ac168002 |
 | status     | Token status                  | string      | ACTIVE                               |
 
-#### Example Request Body
+#### Приклади :
+
+<details>
+
+<summary>JWS Payload — тіло запиту перед підписанням</summary>
 
 ```
 {
@@ -38,7 +42,11 @@ description: '{{url}}/ecom/execute_request/token/v1/create'
 }
 ```
 
-#### Example Response Body
+</details>
+
+<details>
+
+<summary>JWS Payload — тіло відповіді перед підписанням</summary>
 
 ```
 {
@@ -49,3 +57,5 @@ description: '{{url}}/ecom/execute_request/token/v1/create'
     "status": "ACTIVE"
 }
 ```
+
+</details>

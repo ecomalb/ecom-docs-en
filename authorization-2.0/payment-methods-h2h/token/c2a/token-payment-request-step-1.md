@@ -90,9 +90,13 @@ description: '{{url}}/ecom/execute_request/payments/v1/token_card_2_terminal'
 | recipientCardNumberMask    | masked card number of the recipient                                         | string                    | 5573\*\*\*\*\*\*\*\*0304                                                                                        |
 | externalCardToken          | token id                                                                    | string                    | K24YmzXWbw6aCWQn3sdpk7E9                                                                                        |
 
-## An example of a request body
+#### Приклади :
 
-```json
+<details>
+
+<summary>JWS Payload — тіло запиту перед підписанням</summary>
+
+```
 {
     "merchantId":"467c8a10-c705-11ed-afa1-0242ac120002",
     "merchantRequestId": "{{requestUUIDT}}",
@@ -144,7 +148,11 @@ description: '{{url}}/ecom/execute_request/payments/v1/token_card_2_terminal'
 }
 ```
 
-#### Example response body without 3DS
+</details>
+
+<details>
+
+<summary>JWS Payload — тіло відповіді перед підписанням без 3дс</summary>
 
 ```
 {
@@ -222,7 +230,11 @@ description: '{{url}}/ecom/execute_request/payments/v1/token_card_2_terminal'
 }
 ```
 
-#### Example of response body from 3DS
+</details>
+
+<details>
+
+<summary>JWS Payload — тіло відповіді перед підписанням з 3дс</summary>
 
 ```
 {
@@ -299,3 +311,5 @@ description: '{{url}}/ecom/execute_request/payments/v1/token_card_2_terminal'
     "externalCardToken": "tmkEYenZSa8FV03aawVXxbep"
 }
 ```
+
+</details>

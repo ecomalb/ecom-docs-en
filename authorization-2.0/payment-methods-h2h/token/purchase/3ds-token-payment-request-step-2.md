@@ -83,9 +83,13 @@ description: '{{url}}/ecom/execute_request/payments/v1/purchase/token_3ds'
 | senderCardNumberMask    | Sender's masked card number        | string      | 5573\*\*\*\*\*\*\*\*0304                                                     |
 | externalCardToken       | token id                           | string      | tmkEYenZSa8FV03aawVXxbep                                                     |
 
-## Request Body Example:
+#### Приклади :
 
-```json
+<details>
+
+<summary>JWS Payload — тіло запиту перед підписанням</summary>
+
+```
 {
     "operationId": "{{operationIdT}}",
     "browserInfo": {
@@ -102,9 +106,13 @@ description: '{{url}}/ecom/execute_request/payments/v1/purchase/token_3ds'
 
 ```
 
-## Example response body without 3DS
+</details>
 
-```json
+<details>
+
+<summary>JWS Payload — тіло відповіді перед підписанням</summary>
+
+```
 {
     "type": "PURCHASE",
     "rrn": null,
@@ -164,3 +172,5 @@ description: '{{url}}/ecom/execute_request/payments/v1/purchase/token_3ds'
     "externalCardToken": "tmkEYenZSa8FV03aawVXxbep"
 }
 ```
+
+</details>

@@ -14,7 +14,11 @@ A refund is used when it is necessary to return funds to the client for a succes
 
 <table><thead><tr><th width="198">Parameter</th><th width="228">Description</th><th width="116">Data Format</th><th width="132">Example</th></tr></thead><tbody><tr><td>type</td><td>Transaction type.</td><td>string</td><td>Purchase</td></tr><tr><td>rrn</td><td>RRN transaction number in MPS.</td><td>string</td><td>2,55E+09</td></tr><tr><td>purpose</td><td>Payment purpose.</td><td>string</td><td>For goods</td></tr><tr><td>comment</td><td>Comment.</td><td>string</td><td>test</td></tr><tr><td>coinAmount</td><td>Payment amount.</td><td>int</td><td>2000</td></tr><tr><td>merchantId</td><td>Merchant ID.</td><td>string</td><td>137d9304-0368-11ed-b939-0242ac120002</td></tr><tr><td>operationId</td><td>Transaction ID.</td><td>string</td><td>1712844596346b9F-WwrWZpq</td></tr><tr><td>ecomOperationId</td><td>Transaction ID in the Ecom system.</td><td>string</td><td>8c3303e9-7396-43b8-af4e-31d9facdde9b</td></tr><tr><td>merchantName</td><td>Merchant name.</td><td>string</td><td>KB test terminal</td></tr><tr><td>approvalCode</td><td>Authorization code.</td><td>string</td><td>39203</td></tr><tr><td>status</td><td>Transaction status. </td><td>string</td><td>Possible values: SUCCESS, FAIL, PENDING, REQUIRED_3DS, DESIRED_THREEDS_MODE_ERROR</td></tr><tr><td>transactionType</td><td>Transaction type in numerical form.</td><td>string</td><td>35</td></tr><tr><td>merchantRequestId</td><td>Merchant request id</td><td>string</td><td>72837906-f526-4aef-8d11-58d80b44cb75</td></tr><tr><td>transactionCurrency</td><td>Payment currency.</td><td>string</td><td>980</td></tr><tr><td>merchantCommission</td><td>Commission amount</td><td>string</td><td>2</td></tr><tr><td>createDateTime</td><td>Transaction creation date.</td><td>string</td><td>########</td></tr><tr><td>modificationDateTime</td><td>Transaction modification date.</td><td>string</td><td>########</td></tr><tr><td>actionCode</td><td>Response code</td><td>string</td><td>0</td></tr><tr><td>responseCode</td><td>Response details.</td><td>string</td><td>0</td></tr><tr><td>description</td><td>Response description.</td><td>string</td><td>approved</td></tr><tr><td>processingMerchantId</td><td>Merchant ID in the PC</td><td>string</td><td>AE100000</td></tr><tr><td>processingTerminalId</td><td>Terminal ID in the PC</td><td>string</td><td>AE100000</td></tr><tr><td>bankCode</td><td>Issuer bank name.</td><td>string</td><td>BANK_ALLIANCE</td></tr><tr><td>paymentSystem</td><td>Issuer MPS name.</td><td>string</td><td>MasterCard</td></tr><tr><td>productType</td><td>Terminal product type.</td><td>string</td><td>PURCHASE</td></tr><tr><td>notificationUrl</td><td>URL to which the CallBack is sent</td><td>string</td><td><a href="https://merchant.notification_url/">​https://merchant.notification_url/​</a></td></tr><tr><td>paymentServiceType</td><td>Payment type</td><td>string</td><td>CARD/APPLE_PAY/GOOGLE_PAY</td></tr><tr><td>notificationEncryption</td><td>Callback data encryption feature</td><td>string</td><td>true/false If the parameter is not passed or false is passed, then the data in the CallBack will be unencrypted</td></tr><tr><td>originalOperationId</td><td>Id under which the original transaction was created</td><td>string</td><td>1712843529623cHAHkmt-G5u</td></tr><tr><td>originalCoinAmount</td><td>Original payment amount</td><td>int</td><td>100</td></tr><tr><td>originalEcomOperationId</td><td>Id in the Ekom system under which the original transaction was created</td><td>string</td><td>c25ee1cb-a052-439b-b075-bcb632615b11</td></tr><tr><td>rrnOriginal</td><td>RRN original transaction number in MPS</td><td>string</td><td>1,2E+08</td></tr></tbody></table>
 
-## Example of a request body
+#### Приклади :
+
+<details>
+
+<summary>JWS Payload — тіло запиту перед підписанням</summary>
 
 ```json
 {
@@ -28,7 +32,11 @@ A refund is used when it is necessary to return funds to the client for a succes
 
 ```
 
-## Example of response body
+</details>
+
+<details>
+
+<summary>JWS Payload — тіло відповіді перед підписанням без 3дс</summary>
 
 ```json
 {
@@ -68,3 +76,14 @@ A refund is used when it is necessary to return funds to the client for a succes
 }
 
 ```
+
+</details>
+
+<details>
+
+<summary>JWS Payload — тіло відповіді перед підписанням з 3дс</summary>
+
+
+
+</details>
+

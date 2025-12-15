@@ -91,7 +91,11 @@ description: '{{url}}/ecom/execute_request/payments/v1/google_pay_3ds/card_to_ac
 | recipientPaymentSystem     | Recipient's issuer                                                          | string              | MasterCard                                                                                                      |
 | recipientCardNumberMask    | Masked card number of the Recipienr                                         | string              | 5573\*\*\*\*\*\*\*\*0304                                                                                        |
 
-## An example of a request body
+#### Приклади :
+
+<details>
+
+<summary>JWS Payload — тіло запиту перед підписанням</summary>
 
 ```json
 {
@@ -110,7 +114,11 @@ description: '{{url}}/ecom/execute_request/payments/v1/google_pay_3ds/card_to_ac
 }
 ```
 
-## Example of a response body
+</details>
+
+<details>
+
+<summary>JWS Payload — тіло відповіді перед підписанням</summary>
 
 ```json
 {
@@ -187,3 +195,5 @@ description: '{{url}}/ecom/execute_request/payments/v1/google_pay_3ds/card_to_ac
     "recipientZipCode": null
 }
 ```
+
+</details>
