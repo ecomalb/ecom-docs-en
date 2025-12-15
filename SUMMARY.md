@@ -95,3 +95,8 @@
   * [Whitelist IP addresses and URLs](dictionary/whitelist-ip-addresses-and-urls.md)
   * [PriorityBankCode Directory](dictionary/prioritybankcode-directory.md)
 * [History of changes](history-of-changes.md)
+* [Authorization 2.0](authorization-2.0/README.md)
+  * [Key generation](authorization-2.0/key-generation.md)
+  * [Work with subscriptions](authorization-2.0/work-with-subscriptions.md)
+  * [Encryption of card data](authorization-2.0/encryption-of-card-data.md)
+  * [Processing synchronous/asynchronous feeds](authorization-2.0/processing-synchronous-asynchronous-feeds.md)
