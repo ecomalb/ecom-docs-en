@@ -33,4 +33,6 @@ JSON
 >
 > The request is for testing purposes only. It is forbidden to execute the request with real keys. Encryption must be implemented on your side.
 
-### Encrypting a Message using JWK
+{% openapi-operation spec="ENEncryptCardDataAPI" path="/cipher/encrypt_by_jwk" method="post" %}
+[OpenAPI ENEncryptCardDataAPI](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/a577d9a6e6c1382dc71582f3322cc944bed87b540a9da011eddab269f700aa0a.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20251215%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20251215T133757Z&X-Amz-Expires=172800&X-Amz-Signature=718f5dca75b6e9eabee970f3ef08b85f13f38109cf4ae1dd99e1526d2db79181&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+{% endopenapi-operation %}
