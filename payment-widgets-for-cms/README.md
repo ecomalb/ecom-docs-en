@@ -1,0 +1,2 @@
+# Payment widgets for CMS
+

@@ -5,8 +5,7 @@ description: '{{url}}/ecom/execute_request/payments/v1/applepay/merchant/get'
 # Request to receive aPay merchant data
 
 Request for the merchant to receive data and settings of aPay merchant \
-Optional request. Hard-coded aPay data on the merchant side is possible\
-
+Optional request. Hard-coded aPay data on the merchant side is possible<br>
 
 ## Output parameters
 
