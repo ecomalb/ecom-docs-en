@@ -4,7 +4,11 @@ description: '{{url}}/ecom/execute_request/payments/v3/refund'
 
 # REFUND
 
-A refund is used when it is necessary to return funds to the client for a successfully completed Payment transaction. As a result of this transaction, the funds will be returned to the card from which the original transaction was paid.
+Refund is used in case of need to return funds to the client for a successfully completed Payment transaction. As a result of this transaction, the funds will be returned to the card from which the original transaction was paid.
+
+Note on working with the request.
+
+Before executing the request, all input parameters must be encrypted in accordance with the requirements described in the [documentation](https://docs.merchant.alb.ua/en/authentication#for-encryption-and-decryption-the-following-is-used), using the serverPublicKey obtained during authorization.
 
 ## Input parameters:
 
