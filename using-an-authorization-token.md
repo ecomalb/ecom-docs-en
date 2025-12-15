@@ -12,7 +12,7 @@ It is recommended to perform authorization every 8, 12, or 24 hours to reduce er
 
 > Important Note! You should not perform a new authorization request for every subsequent API request.
 
-#### ⚠️ Possible Issues and Solutions
+#### Possible Issues and Solutions
 
 | **Problem**                                   | **Error Code / Message**                                                                | **Solution**                                                                                                                      |
 | --------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |

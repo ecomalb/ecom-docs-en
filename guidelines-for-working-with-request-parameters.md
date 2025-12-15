@@ -1,6 +1,6 @@
 # Guidelines for Working with Request Parameters
 
-mportant: If a parameter is optional (non-mandatory), it is highly recommended to omit it from the request entirely.
+**Important**: If a parameter is optional (non-mandatory), it is highly recommended to omit it from the request entirely.
 
 If an optional parameter is passed in the request, the system automatically applies validation to it, including:
 

@@ -81,31 +81,41 @@ description: '{{url}}/ecom/execute_request/payments/v1/create/preauth'
 | preAuthExpDate         | `string` | Date and time when the pre-authorization action expires.                                                                                                                                                | `2025.10.07 14:27:00.000`              |
 | _Sender & 3DS details_ | _string_ | _All sender details and 3DS IDs (`acsTransId`, `dsTransId`, `eci`, etc.) are also returned._                                                                                                            |                                        |
 
-***
-
 #### Request and Response Examples
 
 **Example Request Body**
 
-JSON
-
-```
+```json
 {
-    "merchantRequestId": "e2980c5e-cddc-4ccf-be36-47ef8c73da84",
-    "merchantId": "137d9304-0368-11ed-b939-0242ac120002",
-    "encryptedCardNumber": "5573670000000304",
+    "merchantId": "467c8a10-c705-11ed-afa1-0242ac120002",
+    "merchantRequestId": "{{requestUUIDT}}",
+    "encryptedCardNumber": "{{encryptedPanT}}",
     "coinAmount": "100",
-    "txnType": "NONCVV",
-    "desiredThreeDSMode": "SHOULD",
-    "notificationUrl": "https://webhook.site/6e35c4af-9af9-4212-9aa4-6a79ed6d7a0d",
-    "notificationEncryption": true,
-    "date": "2024.09.19T15:29:25.00+00:00",
-    "purpose": "LLopo",
-    "preAuthExpDate": "2025-10-07T14:27:00.00+00:00",
+    "comment": "comment",
+    "notificationUrl": "",
+    "purpose": "purpose",
+    "resultRedirectUrl": "https://support.google.com/websearch/answer/463?hl=ru",
+    "desiredThreeDSMode": "MUST",
+    "preAuthExpDate": "2025-10-07 14:27:00.00+03:00",
     "customerData": {
-        "senderCustomerId": "1258728c1"
-        // ... other sender fields ...
+        "senderFirstName": "John",
+        "senderLastName": "Doe",
+        "senderMiddleName": "Fall",
+        "senderEmail": "test@gmail.com",
+        "senderCountry": "sender_country",
+        "senderRegion": "sender_region",
+        "senderCity": "sender_city",
+        "senderStreet": "sender_street",
+        "senderAdditionalAddress": "N 6",
+        "senderItn": "12345",
+        "senderPassport": "12345",
+        "senderIp": "165.222.87.224",
+        "senderPhone": "380967542344",
+        "senderBirthday": "12/12/2000",
+        "senderGender": "Male",
+        "senderZipCode": "12345"
     }
+    "date": "{{currentdateT}}.00+00:00"
 }
 ```
 
@@ -113,9 +123,7 @@ JSON
 
 This response indicates that 3DS was not required or skipped (e.g., if `desiredThreeDSMode` was `MUST_NOT`, or card was non-3DS capable).
 
-JSON
-
-```
+```json
 {
     "type": "PREAUTH",
     "rrn": null,
@@ -144,19 +152,43 @@ JSON
     "productType": "PURCHASE",
     "preAuthExpDate": "2025-10-07 14:27:00.00+03:00",
     "notificationUrl": "https://webhook.site/6e35c4af-9af9-4212-9aa4-6a79ed6d7a0d",
-    "paymentServiceType": "CARD"
-    // ... remaining fields are null or omitted ...
-}
+    "paymentServiceType": "CARD",
+    "notificationEncryption": true,
+    "cardNumberMask": null,
+    "desiredThreeDSMode": "MUST_NOT",
+    "threeDSMode": "MUST_NOT",
+    "statusThreeDs": null,
+    "threeDSServerTransId": null,
+    "redirect3dsUrl": null,
+    "txnType": "null",
+    "senderCustomerId": null,
+    "senderFirstName": null,
+    "senderLastName": null,
+    "senderMiddleName": null,
+    "senderEmail": null,
+    "senderCountry": null,
+    "senderRegion": null,
+    "senderCity": null,
+    "senderStreet": null,
+    "senderAdditionalAddress": null,
+    "senderItn": null,
+    "senderPassport": null,
+    "senderIp": null,
+    "senderPhone": null,
+    "senderBirthday": null,
 ```
 
 **Example Response Body (With 3DS Required)**
 
 This response requires the merchant to redirect the customer to the URL provided in `redirect3dsUrl` to complete authentication.
 
-JSON
-
-```
+```json
 {
+    "type": "PREAUTH",
+    "rrn": null,
+    "purpose": "LLopo",
+    "comment": "RRRR",
+    "coinAmount": 100,
     "merchantId": "137d9304-0368-11ed-b939-0242ac120002",
     "operationId": "1712822536063CdDIRi8hhjq",
     "ecomOperationId": "82da90c3-50b8-4d5b-b357-2cbe55167200",
@@ -187,7 +219,21 @@ JSON
     "statusThreeDs": null,
     "threeDSServerTransId": "0ce5cc44-2698-4a2c-969a-3155bad68b6e",
     "redirect3dsUrl": null,
-    "txnType": "null"
-    // ... all sender and other fields ...
-}
+    "txnType": "null",
+    "senderCustomerId": null,
+    "senderFirstName": null,
+    "senderLastName": null,
+    "senderMiddleName": null,
+    "senderEmail": null,
+    "senderCountry": null,
+    "senderRegion": null,
+    "senderCity": null,
+    "senderStreet": null,
+    "senderAdditionalAddress": null,
+    "senderItn": null,
+    "senderPassport": null,
+    "senderIp": null,
+    "senderPhone": null,
+    "senderBirthday": null,
+    "senderGender": null
 ```
