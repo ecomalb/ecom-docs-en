@@ -121,7 +121,7 @@ eyJhbGciOiJFQ0RILUVTK0EyNTZLVyIsImVuYyI6IkEyNTZHQ00iLCJlcGsiOnsia3R5IjoiRUMiLCJ4
 
 ```
 
-**The process of decrypting JWE data:**
+## **The process of decrypting JWE data:**
 
 **Example JWE token**&#x20;
 
