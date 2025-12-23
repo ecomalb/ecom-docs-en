@@ -1,5 +1,5 @@
 ---
-description: Використання даних з реєстрів для звірки успішних операції.
+description: Using data from the registers to verify successful transactions.
 ---
 
 # Instructions for reconciliation by registers

@@ -36,4 +36,8 @@ To find a token linked to a specific customer, use the `"Retrieve Token by Custo
 🔹 [**Retrieve Token Details**](https://docs.merchant.alb.ua/en/payment-methods-h2h/token/retrieve-token-data)\
 To obtain detailed information about a token (such as expiration date, status, or associated card), use the `"Retrieve Token Details"` request.
 
+🔹 [Token status change](https://docs.merchant.alb.ua/en/payment-methods-h2h/token/update-token-status)
+
+To change the token status, the “Token Status Change” endpoint is used.
+
 These requests enable seamless token management and ensure a secure and efficient payment process.

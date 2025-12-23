@@ -1,5 +1,5 @@
 ---
-description: Версія 2.26.0
+description: Version 2.26.0
 ---
 
 # History of changes
