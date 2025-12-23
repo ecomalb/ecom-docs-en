@@ -4,37 +4,37 @@ description: Getting Started
 
 # Authentication
 
+## To start working with the Alliance pay platform, you need to:
 
-
-## To start working with the AlliancePay platform, you need to:
-
-1. Contact JSC "BANK ALLIANCE" for information about the terms of the internet acquiring service.
-2. Open an account at JSC "BANK ALLIANCE".
+1. Contact Alliance bank to obtain information about the terms of the internet acquiring service.
+2. Open an account with Alliance bank.
 3. Sign an agreement to connect to the internet acquiring service.
 4. Connect to the test environment and conduct test transactions.
 5. Connect to the production environment.
 6. Start using the internet acquiring service.
 
-## The process of creating a new user security session involves several sequential steps, such as:
+## Creation of user security session
+
+The process of creating a new user security session includes a sequence of steps, such as:
 
 * Generating client keys - "Process of generating client communication JWK keys".
 * Obtaining encrypted authorization data by encrypting the request body - "Process of creating JWE encrypted data" and sending the "Request to create a technical session".
 * Decrypting the received data.
 
-Clarification: Encryption and decryption URL
+> ! For test purposes only! They are forbidden to be used with product keys.
+>
+> Clarification: Encryption and decryption URL
+>
+> <kbd>\{{url\}}cipher/decrypt\_by\_jwk?message=</kbd>
+>
+> <kbd>\{{url\}}cipher/encrypt\_by\_jwk?message=</kbd>
+>
+>
 
-<kbd>\{{url\}}cipher/decrypt\_by\_jwk?message=</kbd>
-
-<kbd>\{{url\}}cipher/encrypt\_by\_jwk?message=</kbd>
-
-! only for help during tests! They are forbidden to refuse with product keys.
-
-
-
-#### For encryption and decryption, the following is used:
+#### The following algorithms are used for encryption and decryption:
 
 * Key encryption algorithm (alg) - `ECDH-ES+A256KW`
-* Request body encryption algorithm (enc) - `A256GCM`
+* Encryption of the request body using the algorithm (enc) - `A256GCM`
 
 #### **Example of encrypt/decrypt**&#x20;
 

@@ -1,6 +1,6 @@
 # Table of contents
 
-* [E Commerce platform AlliancePay v2.32.0](README.md)
+* [E-Commerce platform Alliance pay v2.32.0](README.md)
 * [Authentication](authentication.md)
 * [Data Encryption](data-encryption.md)
 * [Authorization](authorization.md)
