@@ -20,7 +20,7 @@
 
 1. In the "Extensions" -> "Extensions' section, you need to activate and configure the module
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Requirements for the server where to install the payment module&#x20;
 

@@ -48,7 +48,7 @@ In the `Alliance API URL` field, you need to specify the value - https://api-eco
 {% tab title="OpenCart 3.0" %}
 To make a refund, you need to go to the order details
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 and here you will find the "Повне повернення коштів" and "Часткове повернення" buttons
 
@@ -56,11 +56,11 @@ and here you will find the "Повне повернення коштів" and "�
 
 When clicked, a pop-up window appears with a message about the successful completion of a full refund
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the order details, each product will be marked with an icon as returned and a new entry about a full refund will appear in the order history.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -68,15 +68,15 @@ In the order details, each product will be marked with an icon as returned and a
 
 In the order details, you need to select which products will be partially refunded.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 After clicking the "Часткове повернення" button, a confirmation window appears.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 After that, a confirmation window will appear.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the payment details, the goods will be marked as returned.
 
