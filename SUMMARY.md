@@ -95,6 +95,7 @@
   * [Joomla! + VirtueMart](payment-widgets-for-cms/joomla-+-virtuemart/README.md)
     * [Installation instructions](payment-widgets-for-cms/joomla-+-virtuemart/installation-instructions.md)
     * [Settings and authorization](payment-widgets-for-cms/joomla-+-virtuemart/settings-and-authorization.md)
+    * [Functionality](payment-widgets-for-cms/joomla-+-virtuemart/functionality.md)
 * [Dictionary](dictionary/README.md)
   * [Transaction status](dictionary/transaction-status.md)
   * [Test cases](dictionary/test-cases.md)
