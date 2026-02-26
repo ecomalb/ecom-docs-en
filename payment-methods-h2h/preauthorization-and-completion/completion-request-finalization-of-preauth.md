@@ -1,19 +1,5 @@
 ---
 description: '{{url}}/ecom/execute_request/payments/v1/completion'
-layout:
-  width: wide
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
-  metadata:
-    visible: true
 ---
 
 # Completion Request (Finalization of Preauth)
