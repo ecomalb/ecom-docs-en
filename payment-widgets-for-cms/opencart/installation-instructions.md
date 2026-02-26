@@ -16,11 +16,11 @@
 
 1. In the "OpenCart" admin in the "Extensions" -> "Installer" section, you need to download the archive specified above
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 1. In the "Extensions" -> "Extensions' section, you need to activate and configure the module
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Requirements for the server where to install the payment module&#x20;
 
